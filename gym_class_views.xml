@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+
+        <!-- Action -->
+        <record id="action_gym_class_tree" model="ir.actions.act_window">
+            <field name="name">Gym Classes</field>
+            <field name="res_model">gym.class</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem id="menu_gym_class_root" name="Gym Classes"/>
+        <menuitem id="menu_gym_class" name="Gym Classes" parent="menu_gym_class_root" action="action_gym_class_tree"/>
+
+    </data>
+</odoo>

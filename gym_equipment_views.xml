@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+
+        <!-- Action -->
+        <record id="action_gym_equipment_tree" model="ir.actions.act_window">
+            <field name="name">Gym Equipment</field>
+            <field name="res_model">gym.equipment</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem id="menu_gym_equipment_root" name="Gym Equipment"/>
+        <menuitem id="menu_gym_equipment" name="Gym Equipment" parent="menu_gym_equipment_root" action="action_gym_equipment_tree"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <menu id="menu_gym_management" name="Gym Management">
+            <menu id="menu_gym_member" name="Members" action="action_gym_member"/>
+            <menu id="menu_gym_trainer" name="Trainers" action="action_gym_trainer"/>
+            <menu id="menu_gym_class" name="Classes" action="action_gym_class"/>
+            <menu id="menu_gym_equipment" name="Equipment" action="action_gym_equipment"/>
+        </menu>
+        <record id="action_gym_member" model="ir.actions.act_window">
+            <field name="name">Members</field>
+            <field name="res_model">gym.member</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- Similar records for other menus -->
+    </data>
+</odoo>
